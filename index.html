@@ -3,29 +3,170 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>मेरे तीनों YouTube चैनल</title>
+
 <style>
-body{font-family:Arial,sans-serif;background:#111;color:#fff;text-align:center;padding:30px 15px}
-.container{max-width:520px;margin:auto}
-h1{font-size:28px}
-p{color:#ccc}
-a{display:block;text-decoration:none;color:#fff;background:#e62117;padding:16px;margin:14px 0;border-radius:12px;font-size:18px;font-weight:bold}
-.note{font-size:14px;color:#aaa}
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  min-height:100vh;
+  font-family:Arial,sans-serif;
+  color:white;
+  text-align:center;
+  background:
+    radial-gradient(circle at top,#3b0066 0%,#12001f 35%,#050505 75%);
+  padding:35px 15px;
+}
+
+.container{
+  max-width:520px;
+  margin:auto;
+}
+
+.profile{
+  width:190px;
+  height:190px;
+  object-fit:cover;
+  border-radius:50%;
+  border:5px solid white;
+  box-shadow:
+    0 0 20px #ff00cc,
+    0 0 45px #7b00ff;
+  margin-bottom:20px;
+  animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+  from{
+    box-shadow:0 0 15px #ff00cc,0 0 30px #7b00ff;
+  }
+  to{
+    box-shadow:0 0 30px #00eaff,0 0 60px #ff00cc;
+  }
+}
+
+h1{
+  font-size:32px;
+  margin:10px 0;
+  font-weight:800;
+}
+
+.tagline{
+  color:#ddd;
+  font-size:17px;
+  line-height:1.6;
+  margin-bottom:25px;
+}
+
+.badge{
+  display:inline-block;
+  padding:8px 18px;
+  border-radius:30px;
+  background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.25);
+  margin-bottom:18px;
+  font-weight:bold;
+}
+
+.channel{
+  display:block;
+  text-decoration:none;
+  color:white;
+  margin:17px 0;
+  padding:19px 20px;
+  border-radius:18px;
+  font-size:20px;
+  font-weight:bold;
+  background:linear-gradient(135deg,#ff004c,#ff6a00);
+  box-shadow:0 8px 25px rgba(255,0,80,.35);
+  transition:.3s;
+}
+
+.channel:nth-of-type(2){
+  background:linear-gradient(135deg,#6a00ff,#c000ff);
+  box-shadow:0 8px 25px rgba(150,0,255,.35);
+}
+
+.channel:nth-of-type(3){
+  background:linear-gradient(135deg,#0066ff,#00d9ff);
+  box-shadow:0 8px 25px rgba(0,180,255,.35);
+}
+
+.channel:hover{
+  transform:translateY(-4px) scale(1.02);
+}
+
+.subscribe{
+  margin-top:25px;
+  font-size:19px;
+  font-weight:bold;
+}
+
+.note{
+  margin-top:30px;
+  color:#aaa;
+  font-size:14px;
+  line-height:1.6;
+}
+
+.footer{
+  margin-top:35px;
+  color:#777;
+  font-size:13px;
+}
 </style>
 </head>
+
 <body>
+
 <div class="container">
-  <img src="IMG-20260912-WA7309.jpg" style="width:180px;height:180px;object-fit:cover;border-radius:50%;margin-bottom:20px;">
+
+<img src="IMG-20260912-WA7309.jpg" class="profile">
+
+<div class="badge">✨ OFFICIAL CREATOR PAGE ✨</div>
+
 <h1>❤️ मेरे तीनों YouTube चैनल</h1>
-<p>नीचे किसी भी चैनल पर जाएँ और पसंद आए तो Subscribe करें।</p>
 
-<a href="https://www.youtube.com/@AiRose2.0-q1z">🌹 AI Rose 2.0</a>
+<p class="tagline">
+AI Videos • AI Editing • AI Cartoon<br>
+मेरे सभी चैनल एक ही जगह पर 🚀
+</p>
 
-<a href="https://www.youtube.com/@KalamAiEditing7-h3o">🎬 Kalam AI Editing 7</a>
+<p class="subscribe">
+👇 अपना पसंदीदा चैनल चुनें और Subscribe करें 👇
+</p>
 
-<a href="https://www.youtube.com/@Aijkcartoon-t2c">🎨 AI JK Cartoon</a>
+<a class="channel"
+href="https://www.youtube.com/@AiRose2.0-q1z"
+target="_blank">
+🌹 AI Rose 2.0
+</a>
 
-<p class="note">इस एक लिंक को WhatsApp, Facebook, Instagram और Telegram पर शेयर कर सकते हैं।</p>
+<a class="channel"
+href="https://www.youtube.com/@KalamAiEditing7-h3o"
+target="_blank">
+🎬 Kalam AI Editing 7
+</a>
+
+<a class="channel"
+href="https://www.youtube.com/@Aijkcartoon-t2c"
+target="_blank">
+🎨 AI JK Cartoon
+</a>
+
+<p class="note">
+🔗 इस एक लिंक को WhatsApp, Facebook, Instagram और Telegram पर शेयर करें।
+</p>
+
+<div class="footer">
+© 2026 • My YouTube Channels
 </div>
+
+</div>
+
 </body>
 </html>
